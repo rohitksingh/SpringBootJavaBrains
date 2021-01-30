@@ -23,4 +23,8 @@ public class TopicService {
     public Topic getTopic(int id){
         return topics.stream().filter(t-> t.getId()==id).findFirst().get();
     }
+
+    public void addTopic(Topic topic){
+        topics.add(topic);
+    }
 }
