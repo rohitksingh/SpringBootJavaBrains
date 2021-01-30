@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootjavabrainsApplication {
+public class CouseAPPAPI {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootjavabrainsApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(CouseAPPAPI.class, args);
+    }
 }
