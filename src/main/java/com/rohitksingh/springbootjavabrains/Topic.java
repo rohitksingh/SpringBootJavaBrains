@@ -1,7 +1,13 @@
 package com.rohitksingh.springbootjavabrains;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Topic {
 
+    @Id
     public int id;
     public String name, description;
 
