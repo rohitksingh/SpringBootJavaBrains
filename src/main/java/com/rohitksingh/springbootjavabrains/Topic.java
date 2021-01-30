@@ -2,24 +2,25 @@ package com.rohitksingh.springbootjavabrains;
 
 public class Topic {
 
-    public String id, name, description;
+    public int id;
+    public String name, description;
 
     public Topic(){
 
     }
 
-    public Topic(String id, String name, String description) {
+    public Topic(int id, String name, String description) {
         super();
         this.id = id;
         this.name = name;
         this.description = description;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
