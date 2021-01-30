@@ -1,5 +1,6 @@
 package com.rohitksingh.springbootjavabrains;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -9,6 +10,9 @@ import java.util.List;
 @Service
 public class TopicService {
 
+    @Autowired
+    private TopicRepository topicRepository;
+
     List<Topic> topics = Arrays.asList(
             new Topic(1, "Java", "Java 1.8"),
             new Topic(2, "Python", "Python 1.7"),
@@ -17,6 +21,8 @@ public class TopicService {
             );
 
     public List<Topic> getAllTopics(){
+        List<Topic> topics = new ArrayList<>();
+        topicRepository.findAll().forEach(topics::add);
         return topics;
     }
 
@@ -25,6 +31,6 @@ public class TopicService {
     }
 
     public void addTopic(Topic topic){
-        topics.add(topic);
+        topicRepository.save(topic);
     }
 }
