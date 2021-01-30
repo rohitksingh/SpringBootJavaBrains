@@ -1,4 +1,4 @@
-package com.rohitksingh.springbootjavabrains;
+package com.rohitksingh.springbootjavabrains.topic;
 
 import org.springframework.data.repository.CrudRepository;
 

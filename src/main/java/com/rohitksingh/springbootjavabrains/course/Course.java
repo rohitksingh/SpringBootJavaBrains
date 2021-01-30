@@ -1,21 +1,19 @@
-package com.rohitksingh.springbootjavabrains;
-
+package com.rohitksingh.springbootjavabrains.course;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Topic {
+public class Course {
 
     @Id
-    public int id;
-    public String name, description;
+    private int id;
+    private String name, description;
 
-    public Topic(){
-
+    public Course() {
     }
 
-    public Topic(int id, String name, String description) {
+    public Course(int id, String name, String description) {
         super();
         this.id = id;
         this.name = name;
